@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="svg/wifi-off.svg" type="image/gif" sizes="16x16">
+    <title>Internet Connection Indicator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap" rel="stylesheet">
+    <link href="icon-font.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <main>
+        <div class="main-content">
+            <h1 class="page-title">Internet Connection Indicator</h1>
+            <p class="page-subtitle">
+                <i class="icon-wifi-off"></i>
+                Turn off internet connection to see this in action
+            </p>
+        </div>
+
+        <div class="offline-content">
+            <i class="offline-icon icon-wifi-off"></i>
+            <span>No Internet</span>
+        </div>
+
+    
+        <div id="status_bar">
+            <div class="status-content">
+                <i class="icon-wifi-off" style="display: none;"></i>
+                <i class="icon-wifi"></i>
+    
+                <span class="status"></span>
+            </div>
+    
+            <span class="cancel"><i class="icon-x"></i></span>
+        </div>
+    </main>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    line-height: 1.5;
+    background: #213636;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 8rem;
+    font-weight: 300;
+}
+
+.main-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn2 1s ease-in-out 0s 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    margin: 0;
+}
+
+.page-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.icon-wifi-off {
+    font-size: 1.75rem;
+    margin-right: 1rem;
+    color: #c2c2c2;
+}
+
+.icon-wifi {
+    font-size: 1.75rem;
+    margin-right: 1rem;
+    color: #07df97;
+}
+
+.icon-x {
+    font-size: 1.35rem;
+}
+
+.offline-content {
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.offline-icon {
+    font-size: 6rem;
+}
+
+#status_bar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 320px;
+    padding: 12px;
+    background: #454545;
+    color: #e2e2e2;
+    border-radius: 6px;
+    animation: fadeIn 1s ease-in-out 0s 1;
+}
+
+.status-content {
+    display: flex;
+    align-items: center;
+}
+
+.status {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cancel {
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    background: #858585;
+    color: #f1f1f1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.offline {
+    display: flex !important;
+}
+
+.online {
+    display: flex !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, calc(-50% + 2rem));
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes fadeIn2 {
+    0% {
+        opacity: 0;
+        transform: translate(0, 2rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
